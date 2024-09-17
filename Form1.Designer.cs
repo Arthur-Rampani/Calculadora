@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            progressBar1 = new ProgressBar();
+            pgbTempo = new ProgressBar();
+            trmTempo = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -55,12 +57,18 @@
             label1.TabIndex = 1;
             label1.Text = "CARREGANDO";
             // 
-            // progressBar1
+            // pgbTempo
             // 
-            progressBar1.Location = new Point(2, 415);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(797, 33);
-            progressBar1.TabIndex = 2;
+            pgbTempo.Location = new Point(2, 415);
+            pgbTempo.Name = "pgbTempo";
+            pgbTempo.Size = new Size(797, 33);
+            pgbTempo.TabIndex = 2;
+            pgbTempo.Click += pgbTempo_Click;
+            // 
+            // trmTempo
+            // 
+            trmTempo.Enabled = true;
+            trmTempo.Tick += timer1_Tick;
             // 
             // Form1
             // 
@@ -68,7 +76,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(progressBar1);
+            Controls.Add(pgbTempo);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
@@ -85,6 +93,7 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private ProgressBar progressBar1;
+        private ProgressBar pgbTempo;
+        private System.Windows.Forms.Timer trmTempo;
     }
 }
