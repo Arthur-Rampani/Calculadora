@@ -32,14 +32,13 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             progressBar1 = new ProgressBar();
-            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._12_59_14_660_512;
-            pictureBox1.Location = new Point(408, 36);
+            pictureBox1.Location = new Point(225, 84);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(365, 325);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -50,7 +49,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(30, 82);
+            label1.Location = new Point(305, 33);
             label1.Name = "label1";
             label1.Size = new Size(215, 36);
             label1.TabIndex = 1;
@@ -63,28 +62,19 @@
             progressBar1.Size = new Size(797, 33);
             progressBar1.TabIndex = 2;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Historic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(30, 212);
-            label2.Name = "label2";
-            label2.Size = new Size(289, 30);
-            label2.TabIndex = 3;
-            label2.Text = "A MELHOR CALCULADORA";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
             Controls.Add(progressBar1);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora3000";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -96,6 +86,5 @@
         private PictureBox pictureBox1;
         private Label label1;
         private ProgressBar progressBar1;
-        private Label label2;
     }
 }
