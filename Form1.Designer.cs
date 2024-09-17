@@ -50,7 +50,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(75, 82);
+            label1.Location = new Point(30, 82);
             label1.Name = "label1";
             label1.Size = new Size(215, 36);
             label1.TabIndex = 1;
