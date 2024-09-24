@@ -12,9 +12,98 @@ namespace Calculadora
 {
     public partial class Form2 : Form
     {
+        float valor1 = 0;
+        string operacao = "";
         public Form2()
         {
             InitializeComponent();
+        }
+
+        private void Btt1_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "1";
+        }
+
+        private void Btt2_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "2";
+        }
+
+        private void Btt3_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "3";
+        }
+
+        private void Btt4_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "4";
+        }
+
+        private void Btt5_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "5";
+        }
+
+        private void Btt6_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "6";
+        }
+
+        private void Btt7_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "7";
+        }
+
+        private void Btt8_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "8";
+        }
+
+        private void Btt9_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "9";
+        }
+
+        private void Btt0_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = txtVisor.Text + "0";
+        }
+
+        private void BttAdição_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(txtVisor);
+            operacao = "adição";
+            txtVisor.Text = "";
+        }
+
+        private void BttSubtração_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(txtVisor);
+            operacao = "subtração";
+            txtVisor.Text = "";
+        }
+
+        private void BttMultiplicação_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(txtVisor);
+            operacao = "multiplição";
+            txtVisor.Text = "";
+        }
+
+        private void BttDivisão_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(txtVisor);
+            operacao = "divisão";
+            txtVisor.Text = "";
+        }
+
+        private void BttIgual_Click_1(object sender, EventArgs e)
+        {
+            if (this.operacao == "soma")
+            {
+                float resultado = valor1 + Convert.ToSingle(txtVisor.Text);
+                txtVisor.Text = resultado.ToString();
+            }
         }
     }
 }
