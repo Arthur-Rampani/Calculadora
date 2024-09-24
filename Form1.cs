@@ -11,13 +11,18 @@ namespace Calculadora
         private void timer1_Tick(object sender, EventArgs e)
         {
             
-            pgbTempo.Value = pgbTempo.Value + 1;
-            if (pgbTempo.Value == 100)
+            
+            if (pgbTempo.Value == 10)
             {
                 trmTempo.Enabled = false;
                 this.Hide();
                 Form2 FormularioTeste = new Form2();
                 FormularioTeste.ShowDialog();
+            }
+
+            else
+            {
+                pgbTempo.Value = pgbTempo.Value + 1;
             }
 
         }

@@ -60,6 +60,7 @@
             // pgbTempo
             // 
             pgbTempo.Location = new Point(2, 415);
+            pgbTempo.Maximum = 10;
             pgbTempo.Name = "pgbTempo";
             pgbTempo.Size = new Size(797, 33);
             pgbTempo.TabIndex = 2;
@@ -68,6 +69,7 @@
             // trmTempo
             // 
             trmTempo.Enabled = true;
+            trmTempo.Interval = 750;
             trmTempo.Tick += timer1_Tick;
             // 
             // Form1
