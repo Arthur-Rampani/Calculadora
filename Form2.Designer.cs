@@ -44,7 +44,7 @@
             Btt9 = new Button();
             BttIgual = new Button();
             Btt0 = new Button();
-            textBox1 = new TextBox();
+            txtVisor = new TextBox();
             SuspendLayout();
             // 
             // BttAdição
@@ -101,6 +101,7 @@
             Btt1.TabIndex = 4;
             Btt1.Text = "1";
             Btt1.UseVisualStyleBackColor = false;
+            Btt1.Click += Btt1_Click;
             // 
             // Btt2
             // 
@@ -112,6 +113,7 @@
             Btt2.TabIndex = 5;
             Btt2.Text = "2";
             Btt2.UseVisualStyleBackColor = false;
+            Btt2.Click += Btt2_Click;
             // 
             // Btt3
             // 
@@ -123,6 +125,7 @@
             Btt3.TabIndex = 6;
             Btt3.Text = "3";
             Btt3.UseVisualStyleBackColor = false;
+            Btt3.Click += Btt3_Click;
             // 
             // BttCLS
             // 
@@ -145,6 +148,7 @@
             Btt4.TabIndex = 8;
             Btt4.Text = "4";
             Btt4.UseVisualStyleBackColor = false;
+            Btt4.Click += Btt4_Click;
             // 
             // Btt5
             // 
@@ -156,6 +160,7 @@
             Btt5.TabIndex = 9;
             Btt5.Text = "5";
             Btt5.UseVisualStyleBackColor = false;
+            Btt5.Click += Btt5_Click;
             // 
             // Btt6
             // 
@@ -167,6 +172,7 @@
             Btt6.TabIndex = 10;
             Btt6.Text = "6";
             Btt6.UseVisualStyleBackColor = false;
+            Btt6.Click += Btt6_Click;
             // 
             // Btt7
             // 
@@ -178,6 +184,7 @@
             Btt7.TabIndex = 11;
             Btt7.Text = "7";
             Btt7.UseVisualStyleBackColor = false;
+            Btt7.Click += Btt7_Click;
             // 
             // Btt8
             // 
@@ -189,6 +196,7 @@
             Btt8.TabIndex = 12;
             Btt8.Text = "8";
             Btt8.UseVisualStyleBackColor = false;
+            Btt8.Click += Btt8_Click;
             // 
             // Btt9
             // 
@@ -200,6 +208,7 @@
             Btt9.TabIndex = 13;
             Btt9.Text = "9";
             Btt9.UseVisualStyleBackColor = false;
+            Btt9.Click += Btt9_Click;
             // 
             // BttIgual
             // 
@@ -211,6 +220,7 @@
             BttIgual.TabIndex = 14;
             BttIgual.Text = "=";
             BttIgual.UseVisualStyleBackColor = false;
+            BttIgual.Click += BttIgual_Click_1;
             // 
             // Btt0
             // 
@@ -222,20 +232,21 @@
             Btt0.TabIndex = 15;
             Btt0.Text = "0";
             Btt0.UseVisualStyleBackColor = false;
+            Btt0.Click += Btt0_Click;
             // 
-            // textBox1
+            // txtVisor
             // 
-            textBox1.Location = new Point(60, 114);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(258, 23);
-            textBox1.TabIndex = 16;
+            txtVisor.Location = new Point(60, 114);
+            txtVisor.Name = "txtVisor";
+            txtVisor.Size = new Size(258, 23);
+            txtVisor.TabIndex = 16;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(383, 536);
-            Controls.Add(textBox1);
+            Controls.Add(txtVisor);
             Controls.Add(Btt0);
             Controls.Add(BttIgual);
             Controls.Add(Btt9);
@@ -276,6 +287,6 @@
         private Button Btt9;
         private Button BttIgual;
         private Button Btt0;
-        private TextBox textBox1;
+        private TextBox txtVisor;
     }
 }
