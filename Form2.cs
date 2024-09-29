@@ -69,41 +69,64 @@ namespace Calculadora
             txtVisor.Text = txtVisor.Text + "0";
         }
 
-        private void BttAdição_Click(object sender, EventArgs e)
+        private void BttAdição_Click_1(object sender, EventArgs e)
         {
-            valor1 = Convert.ToSingle(txtVisor);
+            valor1 = Convert.ToSingle(txtVisor.Text);
             operacao = "adição";
             txtVisor.Text = "";
         }
 
-        private void BttSubtração_Click(object sender, EventArgs e)
+        private void BttSubtração_Click_1(object sender, EventArgs e)
         {
-            valor1 = Convert.ToSingle(txtVisor);
+            valor1 = Convert.ToSingle(txtVisor.Text);
             operacao = "subtração";
             txtVisor.Text = "";
         }
 
-        private void BttMultiplicação_Click(object sender, EventArgs e)
+        private void BttMultiplicação_Click_1(object sender, EventArgs e)
         {
-            valor1 = Convert.ToSingle(txtVisor);
-            operacao = "multiplição";
+            valor1 = Convert.ToSingle(txtVisor.Text);
+            operacao = "multiplicação";
             txtVisor.Text = "";
         }
 
-        private void BttDivisão_Click(object sender, EventArgs e)
+        private void BttDivisão_Click_1(object sender, EventArgs e)
         {
-            valor1 = Convert.ToSingle(txtVisor);
+            valor1 = Convert.ToSingle(txtVisor.Text);
             operacao = "divisão";
             txtVisor.Text = "";
         }
 
         private void BttIgual_Click_1(object sender, EventArgs e)
         {
-            if (this.operacao == "soma")
+            if (this.operacao == "adição")
             {
                 float resultado = valor1 + Convert.ToSingle(txtVisor.Text);
-                txtVisor.Text = resultado.ToString();
+                txtVisor.Text = Convert.ToString(resultado);
             }
+
+            if (this.operacao == "subtração")
+            {
+                float resultado = valor1 - Convert.ToSingle(txtVisor.Text);
+                txtVisor.Text = Convert.ToString(resultado);
+            }
+
+            if (this.operacao == "multiplicação")
+            {
+                float resultado = valor1 * Convert.ToSingle(txtVisor.Text);
+                txtVisor.Text = Convert.ToString(resultado);
+            }
+
+            if (this.operacao == "divisão")
+            {
+                float resultado = valor1 / Convert.ToSingle(txtVisor.Text);
+                txtVisor.Text = Convert.ToString(resultado);
+            }
+        }
+
+        private void BttCLS_Click(object sender, EventArgs e)
+        {
+            txtVisor.Text = "";
         }
     }
 }

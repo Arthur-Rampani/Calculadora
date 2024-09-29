@@ -57,6 +57,7 @@
             BttAdição.TabIndex = 0;
             BttAdição.Text = "+";
             BttAdição.UseVisualStyleBackColor = false;
+            BttAdição.Click += BttAdição_Click_1;
             // 
             // BttSubtração
             // 
@@ -68,6 +69,7 @@
             BttSubtração.TabIndex = 1;
             BttSubtração.Text = "-";
             BttSubtração.UseVisualStyleBackColor = false;
+            BttSubtração.Click += BttSubtração_Click_1;
             // 
             // BttMultiplicação
             // 
@@ -79,6 +81,7 @@
             BttMultiplicação.TabIndex = 2;
             BttMultiplicação.Text = "*";
             BttMultiplicação.UseVisualStyleBackColor = false;
+            BttMultiplicação.Click += BttMultiplicação_Click_1;
             // 
             // BttDivisão
             // 
@@ -90,6 +93,7 @@
             BttDivisão.TabIndex = 3;
             BttDivisão.Text = "/";
             BttDivisão.UseVisualStyleBackColor = false;
+            BttDivisão.Click += BttDivisão_Click_1;
             // 
             // Btt1
             // 
@@ -137,6 +141,7 @@
             BttCLS.TabIndex = 7;
             BttCLS.Text = "CLS";
             BttCLS.UseVisualStyleBackColor = false;
+            BttCLS.Click += BttCLS_Click;
             // 
             // Btt4
             // 
