@@ -33,6 +33,7 @@
             BttConverter = new Button();
             label2 = new Label();
             txtBoxFahrenheit = new TextBox();
+            BttLimpar = new Button();
             SuspendLayout();
             // 
             // txtBoxCelsius
@@ -80,11 +81,22 @@
             txtBoxFahrenheit.Size = new Size(227, 72);
             txtBoxFahrenheit.TabIndex = 5;
             // 
+            // BttLimpar
+            // 
+            BttLimpar.Location = new Point(264, 138);
+            BttLimpar.Name = "BttLimpar";
+            BttLimpar.Size = new Size(94, 55);
+            BttLimpar.TabIndex = 6;
+            BttLimpar.Text = "Limpar";
+            BttLimpar.UseVisualStyleBackColor = true;
+            BttLimpar.Click += BttLimpar_Click;
+            // 
             // FrmTemperatura
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(383, 267);
+            Controls.Add(BttLimpar);
             Controls.Add(txtBoxFahrenheit);
             Controls.Add(label2);
             Controls.Add(BttConverter);
@@ -104,5 +116,6 @@
         private Button BttConverter;
         private Label label2;
         private TextBox txtBoxFahrenheit;
+        private Button BttLimpar;
     }
 }

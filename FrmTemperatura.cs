@@ -30,6 +30,12 @@ namespace Calculadora
             double resultado = celsius * 1.8 + 32;
             txtBoxFahrenheit.Text = Convert.ToString(resultado);
         }
+
+        private void BttLimpar_Click(object sender, EventArgs e)
+        {
+            txtBoxCelsius.Clear();
+            txtBoxFahrenheit.Clear();
+        }
     }
 }
 
