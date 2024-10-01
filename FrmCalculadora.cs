@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class Form2 : Form
+    public partial class FrmCalculadora : Form
     {
         float valor1 = 0;
         string operacao = "";
-        public Form2()
+        public FrmCalculadora()
         {
             InitializeComponent();
         }
