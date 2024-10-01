@@ -145,5 +145,11 @@ namespace Calculadora
         {
             Application.Exit();
         }
+
+        private void centímetroParaPolegadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCentimetroePolegada FormularioTeste = new FrmCentimetroePolegada();
+            FormularioTeste.ShowDialog();
+        }
     }
 }
