@@ -1,9 +1,9 @@
 namespace Calculadora
 {
-    public partial class Form1 : Form
+    public partial class FrmTeladeSplash : Form
     {
         int tempo = 0;
-        public Form1()
+        public FrmTeladeSplash()
         {
             InitializeComponent();
         }
@@ -16,7 +16,7 @@ namespace Calculadora
             {
                 trmTempo.Enabled = false;
                 this.Hide();
-                Form2 FormularioTeste = new Form2();
+                FrmCalculadora FormularioTeste = new FrmCalculadora();
                 FormularioTeste.ShowDialog();
             }
 
