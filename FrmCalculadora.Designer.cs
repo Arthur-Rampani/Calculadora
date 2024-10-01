@@ -46,6 +46,12 @@
             BttIgual = new Button();
             Btt0 = new Button();
             txtVisor = new TextBox();
+            menuStrip1 = new MenuStrip();
+            arquivoToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            conversorToolStripMenuItem = new ToolStripMenuItem();
+            celsiusParaFahrenheitToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // BttAdição
@@ -264,6 +270,44 @@
             txtVisor.Size = new Size(294, 27);
             txtVisor.TabIndex = 16;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { arquivoToolStripMenuItem, conversorToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(438, 28);
+            menuStrip1.TabIndex = 17;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            arquivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem });
+            arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            arquivoToolStripMenuItem.Size = new Size(75, 24);
+            arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(224, 26);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
+            // conversorToolStripMenuItem
+            // 
+            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { celsiusParaFahrenheitToolStripMenuItem });
+            conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
+            conversorToolStripMenuItem.Size = new Size(89, 24);
+            conversorToolStripMenuItem.Text = "Conversor";
+            // 
+            // celsiusParaFahrenheitToolStripMenuItem
+            // 
+            celsiusParaFahrenheitToolStripMenuItem.Name = "celsiusParaFahrenheitToolStripMenuItem";
+            celsiusParaFahrenheitToolStripMenuItem.Size = new Size(243, 26);
+            celsiusParaFahrenheitToolStripMenuItem.Text = "Celsius para Fahrenheit";
+            celsiusParaFahrenheitToolStripMenuItem.Click += celsiusParaFahrenheitToolStripMenuItem_Click;
+            // 
             // FrmCalculadora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -286,11 +330,16 @@
             Controls.Add(BttMultiplicação);
             Controls.Add(BttSubtração);
             Controls.Add(BttAdição);
+            Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "FrmCalculadora";
             Text = "Calculadora";
+            FormClosed += FrmCalculadora_FormClosed;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -314,5 +363,10 @@
         private Button BttIgual;
         private Button Btt0;
         private TextBox txtVisor;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem arquivoToolStripMenuItem;
+        private ToolStripMenuItem conversorToolStripMenuItem;
+        private ToolStripMenuItem celsiusParaFahrenheitToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
     }
 }

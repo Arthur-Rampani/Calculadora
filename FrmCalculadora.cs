@@ -128,5 +128,22 @@ namespace Calculadora
         {
             txtVisor.Text = "";
         }
+
+        private void celsiusParaFahrenheitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTemperatura FormularioTeste = new FrmTemperatura();
+            FormularioTeste.ShowDialog();
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmCalculadora_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
